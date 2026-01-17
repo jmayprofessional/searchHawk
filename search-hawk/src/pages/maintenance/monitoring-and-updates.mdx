@@ -1,0 +1,45 @@
+---
+title: "Monitoring and Updates"
+---
+
+import Layout from '../../layouts/Layout.astro'
+
+<Layout title={frontmatter.title}>
+
+<div class="max-w-3xl mx-auto space-y-8">
+
+  {/* Page header */}
+  <div class="text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-4">
+      {frontmatter.title}
+    </h1>
+    <p class="text-gray-300 text-lg">
+      Active monitoring helps catch errors early, maintain rankings, and improve user trust.
+    </p>
+  </div>
+
+  {/* Checklist card */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold mb-4">Checklist</h2>
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+      <li>Monitor GBP for suspensions or warnings</li>
+      <li>Track website uptime and broken links</li>
+      <li>Update service offerings as they change</li>
+      <li>Refresh content on homepage, service pages, and location pages annually</li>
+      <li>Check NAP consistency across citations regularly</li>
+      <li>Track review responses and post updates weekly</li>
+    </ul>
+  </div>
+
+  {/* Notes card */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold mb-4">Notes</h2>
+    <textarea
+      class="w-full min-h-[120px] bg-gray-900 text-gray-100 border border-gray-700 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
+      placeholder="Optional: set reminders in calendar or project management tool"
+    ></textarea>
+  </div>
+
+</div>
+
+</Layout>

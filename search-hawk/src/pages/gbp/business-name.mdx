@@ -1,0 +1,65 @@
+---
+title: "Business Name"
+---
+
+import Layout from '../../layouts/Layout.astro'
+
+<Layout title={frontmatter.title}>
+
+<div class="max-w-3xl mx-auto space-y-8">
+
+  {/* Page header */}
+  <div class="text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-4">
+      {frontmatter.title}
+    </h1>
+    <p class="text-gray-300 text-lg">
+      Your business name is the foundation of your local SEO. It must be **exactly the same** everywhere — on Google, your website, and all online directories — to build trust and authority with Google.
+    </p>
+  </div>
+
+  {/* Why it matters */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6 text-gray-200 space-y-2">
+    <h2 class="text-2xl font-bold mb-2">Why this matters</h2>
+    <p>
+      Google uses your business name to match your profile to search queries. If it varies across platforms, Google may not trust your business, which can hurt rankings.
+    </p>
+    <p class="italic text-gray-400">
+      Example: Your registered business name is <strong>“Smith Plumbing LLC”</strong>. Do <strong>not</strong> use “Smith Plumbing Charleston” or “Smith Plumbing Services.”
+    </p>
+  </div>
+
+  {/* Checklist card */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold mb-4">Checklist</h2>
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+      <li>Business name matches your **legal / registered name** exactly (check your incorporation documents or license)</li>
+      <li>**Do not** add keywords, locations, or extra words — e.g., avoid “Best Plumbing Charleston”</li>
+      <li>Name matches **your website homepage** exactly, including punctuation and abbreviations</li>
+      <li>Name matches major local directories (Yelp, BBB, Angi, etc.)</li>
+    </ul>
+  </div>
+
+  {/* Common mistakes */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6 text-gray-200">
+    <h2 class="text-2xl font-bold mb-2">Common mistakes to avoid</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Using different abbreviations: “LLC” vs “L.L.C.”</li>
+      <li>Adding extra words like “best,” “cheap,” or “services”</li>
+      <li>Changing the order of words: e.g., “Plumbing Smith LLC” instead of “Smith Plumbing LLC”</li>
+      <li>Not updating citations after a name change</li>
+    </ul>
+  </div>
+
+  {/* Notes card */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold mb-4">Notes</h2>
+    <textarea
+      class="w-full min-h-[120px] bg-gray-900 text-gray-100 border border-gray-700 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
+      placeholder="Optional: jot down variations or issues you notice. Example: ‘Angi listing shows “Smith Plumbing” but license says “Smith Plumbing LLC” — update to match.’"
+    ></textarea>
+  </div>
+
+</div>
+
+</Layout>

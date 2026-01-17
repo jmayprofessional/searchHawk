@@ -1,0 +1,37 @@
+---
+import Layout from '../../layouts/Layout.astro';
+title: "NAP & Schema"
+---
+
+<Layout title={frontmatter.title}>
+
+<div class="min-h-screen p-8 flex flex-col items-center space-y-8">
+
+  {/* Header */}
+  <div class="text-center max-w-3xl">
+    <h1 class="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-4">
+      NAP & Schema
+    </h1>
+    <p class="text-gray-300 text-lg">
+      Structured data (LocalBusiness schema) and consistent NAP information signal legitimacy to Google.
+    </p>
+  </div>
+
+  {/* Checklist */}
+  <div class="w-full max-w-4xl bg-gray-800 rounded-xl shadow-lg p-6 text-gray-100 space-y-4">
+    <ul class="list-disc list-inside space-y-2">
+      <li>Name, Address, Phone match GBP exactly</li>
+      <li>LocalBusiness schema implemented on homepage</li>
+      <li>Add schema to location & service pages where relevant</li>
+      <li>Include “sameAs” links for social profiles</li>
+      <li>Verify schema with Google Rich Results Test</li>
+    </ul>
+
+    <p class="mt-4 text-gray-400 italic">
+      *(Optional: keep a log of schema URLs and testing results)*
+    </p>
+  </div>
+
+</div>
+
+</Layout>

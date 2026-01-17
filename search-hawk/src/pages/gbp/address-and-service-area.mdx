@@ -1,0 +1,43 @@
+---
+title: "Address and Service Area"
+---
+
+import Layout from '../../layouts/Layout.astro'
+
+<Layout title={frontmatter.title}>
+
+<div class="max-w-3xl mx-auto space-y-8">
+
+  {/* Page header */}
+  <div class="text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-4">
+      {frontmatter.title}
+    </h1>
+    <p class="text-gray-300 text-lg">
+      Correct location and service areas help Google understand where you operate and display your business locally.
+    </p>
+  </div>
+
+  {/* Checklist card */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold mb-4">Checklist</h2>
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+      <li>Physical location set accurately (or hidden if Service Area Business)</li>
+      <li>Service areas set to actual cities served</li>
+      <li>Avoid including states, counties, or unnecessary zip codes</li>
+      <li>Confirm address consistency with website & citations</li>
+    </ul>
+  </div>
+
+  {/* Notes card */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold mb-4">Notes</h2>
+    <textarea
+      class="w-full min-h-[120px] bg-gray-900 text-gray-100 border border-gray-700 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
+      placeholder="Optional: keep track of map pin and service radius"
+    ></textarea>
+  </div>
+
+</div>
+
+</Layout>

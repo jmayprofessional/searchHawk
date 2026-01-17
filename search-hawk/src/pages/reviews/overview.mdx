@@ -1,0 +1,54 @@
+---
+title: "Reviews & Engagement Overview"
+---
+
+import Layout from '../../layouts/Layout.astro'
+
+<Layout title={frontmatter.title}>
+
+<div class="max-w-3xl mx-auto space-y-8">
+
+  {/* Page header */}
+  <div class="text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-4">
+      {frontmatter.title}
+    </h1>
+    <p class="text-gray-300 text-lg">
+      Reviews and engagement are the core proof that your business exists and provides real services.
+      Properly managing this section improves rankings and clicks.
+    </p>
+  </div>
+
+  {/* Key points card */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6 space-y-4">
+    <h2 class="text-2xl font-bold mb-2">Google Values</h2>
+    <ul class="list-disc list-inside text-gray-200 space-y-1">
+      <li>Review volume & velocity</li>
+      <li>Responses to reviews</li>
+      <li>Posts & updates</li>
+      <li>Q&A activity</li>
+    </ul>
+  </div>
+
+  {/* Checklist card */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold mb-2">Checklist</h2>
+    <ul class="list-disc list-inside text-gray-200 space-y-2">
+      <li>Understand why reviews impact local rankings</li>
+      <li>Commit to regular engagement (weekly or bi-weekly)</li>
+      <li>Prepare system for tracking reviews and responses</li>
+    </ul>
+  </div>
+
+  {/* Notes card */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold mb-2">Notes</h2>
+    <textarea
+      class="w-full min-h-[120px] bg-gray-900 text-gray-100 border border-gray-700 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
+      placeholder="Optional: describe your current review strategy or gaps"
+    ></textarea>
+  </div>
+
+</div>
+
+</Layout>

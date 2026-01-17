@@ -1,0 +1,61 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Google Business Profile Guide">
+
+<div class="min-h-screen bg-gray-900 text-gray-100 p-8 flex flex-col items-center">
+
+  {/* Header */}
+  <div class="text-center max-w-3xl mb-12">
+    <h1 class="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-4">
+      Google Business Profile Guide
+    </h1>
+    <p class="text-gray-300 text-lg">
+      Follow these steps in order to complete your Core 30 setup and optimize your business for maximum local SEO.
+    </p>
+  </div>
+
+  {/* Step cards */}
+  <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <a href="/gbp/business-name" class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">1. Business Name</h2>
+      <p class="text-gray-400">Ensure your business name is consistent everywhere.</p>
+    </a>
+
+    <a href="/gbp/business-description" class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">2. Business Description</h2>
+      <p class="text-gray-400">Craft a clear description signaling purpose & location.</p>
+    </a>
+
+    <a href="/gbp/primary-category" class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">3. Primary Category</h2>
+      <p class="text-gray-400">Set the core category that matches your main service.</p>
+    </a>
+
+    <a href="/gbp/secondary-categories" class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">4. Secondary Categories</h2>
+      <p class="text-gray-400">Add supporting services without confusing Google.</p>
+    </a>
+
+    <a href="/gbp/address-and-service-area" class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">5. Address & Service Area</h2>
+      <p class="text-gray-400">Set location & service areas accurately.</p>
+    </a>
+
+    <a href="/gbp/attributes-and-hours" class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">6. Attributes & Hours</h2>
+      <p class="text-gray-400">Add relevant attributes and accurate hours.</p>
+    </a>
+
+    <a href="/gbp/services" class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 md:col-span-2">
+      <h2 class="text-2xl font-bold mb-2">7. Services</h2>
+      <p class="text-gray-400">List all services clearly to help Google understand your offerings.</p>
+    </a>
+
+  </div>
+
+</div>
+
+</Layout>

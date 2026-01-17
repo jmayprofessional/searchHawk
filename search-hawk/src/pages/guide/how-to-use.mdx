@@ -1,0 +1,70 @@
+---
+title: "How to Use This Guide"
+---
+
+import Layout from '../../layouts/Layout.astro'
+
+<Layout title={frontmatter.title}>
+
+<div class="max-w-3xl mx-auto space-y-8">
+
+  {/* Page header */}
+  <div class="text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-4">
+      {frontmatter.title}
+    </h1>
+    <p class="text-gray-300 text-lg">
+      This guide is designed to walk you through setting up your Google Business Profile and local website for maximum local SEO. Follow the steps in order to ensure nothing is missed and everything is aligned correctly.
+    </p>
+  </div>
+
+  {/* Why follow the guide */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6 space-y-4">
+    <h2 class="text-2xl font-bold">Why Follow This Order?</h2>
+    <p class="text-gray-200">
+      The steps in this guide are arranged in the order that Google typically evaluates local businesses. Starting with the core foundation (business name, address, and categories) ensures that every following step builds on an accurate base. Skipping steps or doing them out of order may hurt your ranking potential.
+    </p>
+    <ul class="list-disc list-inside text-gray-200 space-y-1">
+      <li>Foundation first: accurate name, address, hours, and categories.</li>
+      <li>Then focus on services, descriptions, and content alignment.</li>
+      <li>Next, optimize for reviews and engagement.</li>
+      <li>Finally, maintain your listings and website regularly.</li>
+    </ul>
+  </div>
+
+  {/* Step-by-step usage */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6 space-y-4">
+    <h2 class="text-2xl font-bold">Step-by-Step Instructions</h2>
+    <ol class="list-decimal list-inside text-gray-200 space-y-2">
+      <li>
+        <strong>Start with your Google Business Profile core details:</strong> business name, address, service areas, hours, and categories. Accuracy here ensures Google trusts your profile.
+      </li>
+      <li>
+        <strong>Fill out business description and services:</strong> clearly describe what your business does without keyword stuffing. This makes your profile readable and trustworthy.
+      </li>
+      <li>
+        <strong>Verify your website aligns:</strong> homepage H1 should match primary category, service pages match GBP, NAP is consistent, and schema markup is in place.
+      </li>
+      <li>
+        <strong>Collect and manage reviews:</strong> get authentic reviews, respond to them, and keep engagement consistent.
+      </li>
+      <li>
+        <strong>Maintain over time:</strong> regularly update hours, services, posts, Q&A, and monitor for errors or duplicate listings.
+      </li>
+    </ol>
+  </div>
+
+  {/* Notes / tips */}
+  <div class="bg-gray-800 rounded-xl shadow-lg p-6 space-y-4">
+    <h2 class="text-2xl font-bold">Tips for Using the Guide</h2>
+    <ul class="list-disc list-inside text-gray-200 space-y-1">
+      <li>Take one section at a time — don’t rush.</li>
+      <li>Use the Notes field on each page to record progress or issues.</li>
+      <li>Check each item off the checklist as you complete it.</li>
+      <li>Consistency is more important than speed.</li>
+    </ul>
+  </div>
+
+</div>
+
+</Layout>

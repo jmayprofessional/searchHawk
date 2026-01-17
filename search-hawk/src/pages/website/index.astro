@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Website Overview">
+
+  <div class="min-h-screen p-8 flex flex-col items-center space-y-12">
+
+    {/* Header */}
+    <div class="text-center max-w-3xl">
+      <h1 class="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-4">
+        Website Alignment
+      </h1>
+      <p class="text-gray-300 text-lg">
+        Follow this step-by-step guide to make sure your website mirrors your GBP for maximum local SEO impact.
+      </p>
+    </div>
+
+    {/* Navigation to subpages */}
+    <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="/website/homepage-alignment" class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+        <h2 class="text-2xl font-bold mb-2">Homepage Alignment</h2>
+        <p class="text-gray-400">Ensure your homepage reflects your GBP primary service</p>
+      </a>
+      <a href="/website/service-pages" class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+        <h2 class="text-2xl font-bold mb-2">Service Pages</h2>
+        <p class="text-gray-400">Align each service page with your GBP services</p>
+      </a>
+      <a href="/website/technical-seo" class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+        <h2 class="text-2xl font-bold mb-2">Technical SEO</h2>
+        <p class="text-gray-400">Optimize meta, URLs, and site structure for local SEO</p>
+      </a>
+      <a href="/website/content-audit" class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+        <h2 class="text-2xl font-bold mb-2">Content Audit</h2>
+        <p class="text-gray-400">Ensure consistency, keywords, and clarity across all pages</p>
+      </a>
+    </div>
+
+  </div>
+
+</Layout>
