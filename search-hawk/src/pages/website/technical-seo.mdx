@@ -1,0 +1,126 @@
+---
+title: "Technical SEO"
+layout: "../../layouts/Layout.astro"
+---
+
+<div class="min-h-screen bg-gray-900 text-gray-100 p-8 flex flex-col items-center space-y-12">
+
+  {/* Header */}
+  <div class="text-center max-w-3xl">
+    <h1 class="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-4">
+      Technical SEO for Local Rankings
+    </h1>
+    <p class="text-gray-300 text-lg mb-4">
+      Technical SEO ensures Google can crawl, understand, and trust your website so it ranks for local searches.
+    </p>
+    <p class="text-gray-400">
+      Below are the key technical steps, why they matter, and examples so you can implement them yourself.
+    </p>
+  </div>
+
+  {/* Checklist Sections */}
+  <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">Mobile-Friendly & Fast Loading</h2>
+      <p class="text-gray-400 mb-2">
+        Google prioritizes mobile-friendly, fast websites. Slow or broken mobile pages can hurt rankings.
+      </p>
+      <p class="text-gray-400">
+        <strong>How to do it:</strong> Use responsive design, compress images, enable caching, and minimize heavy scripts.
+      </p>
+      <p class="text-gray-400">
+        <strong>Example:</strong> Test using Google PageSpeed Insights and aim for 80+ mobile score.
+      </p>
+    </div>
+
+    <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">SSL Certificate (HTTPS)</h2>
+      <p class="text-gray-400 mb-2">
+        HTTPS secures your site, protects visitors, and is a ranking factor.
+      </p>
+      <p class="text-gray-400">
+        <strong>How to do it:</strong> Install an SSL certificate (most hosting platforms offer free options like Let's Encrypt).
+      </p>
+      <p class="text-gray-400">
+        <strong>Example:</strong> Your site should load as <code>https://yourdomain.com</code>, not <code>http://</code>.
+      </p>
+    </div>
+
+    <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">Structured Data (Schema)</h2>
+      <p class="text-gray-400 mb-2">
+        Adding LocalBusiness schema helps Google understand your business details and display rich results.
+      </p>
+      <p class="text-gray-400">
+        <strong>How to do it:</strong> Include name, address, phone, hours, service area, and services in JSON-LD format.
+      </p>
+      <p class="text-gray-400">
+        <strong>Example:</strong> Google Rich Results Test tool can validate your schema.
+      </p>
+    </div>
+
+    <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">Meta Titles & Descriptions</h2>
+      <p class="text-gray-400 mb-2">
+        Titles and descriptions tell Google what your page is about and encourage clicks.
+      </p>
+      <p class="text-gray-400">
+        <strong>How to do it:</strong> Include main service + city in title and description naturally.
+      </p>
+      <p class="text-gray-400">
+        <strong>Example:</strong> Title: "Plumber in Charleston, SC | Fast & Reliable". Description: "Expert plumbing services in Charleston. Call today!"
+      </p>
+    </div>
+
+    <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">URL Structure</h2>
+      <p class="text-gray-400 mb-2">
+        Clean URLs improve usability and local SEO signals.
+      </p>
+      <p class="text-gray-400">
+        <strong>How to do it:</strong> Use lowercase, dashes for spaces, include service + city.
+      </p>
+      <p class="text-gray-400">
+        <strong>Example:</strong> <code>/plumber-charleston</code> or <code>/drain-cleaning-charleston</code>
+      </p>
+    </div>
+
+    <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">Internal Linking</h2>
+      <p class="text-gray-400 mb-2">
+        Links help Google understand page relationships and hierarchy.
+      </p>
+      <p class="text-gray-400">
+        <strong>How to do it:</strong> Link homepage → service pages → related services.
+      </p>
+      <p class="text-gray-400">
+        <strong>Example:</strong> On homepage: "Our Services → Emergency Plumbing, Drain Cleaning"
+      </p>
+    </div>
+
+    <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 md:col-span-2">
+      <h2 class="text-2xl font-bold mb-2">Sitemap & Robots.txt</h2>
+      <p class="text-gray-400 mb-2">
+        These files guide search engines to index the right pages.
+      </p>
+      <p class="text-gray-400">
+        <strong>How to do it:</strong> Create <code>sitemap.xml</code> with all pages, and <code>robots.txt</code> allowing search engines to crawl them. Submit sitemap in Google Search Console.
+      </p>
+    </div>
+
+  </div>
+
+  {/* CTA */}
+  <div class="max-w-3xl bg-gray-800 rounded-xl shadow-lg p-8 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-purple-400">Need Help With Technical SEO?</h2>
+    <p class="text-gray-300 mb-4">
+      If these technical steps feel overwhelming, I can set up your website so it’s fully optimized for local rankings and mirrors your GBP.
+    </p>
+    <a href="mailto:jmayprofessional@gmail.com?subject=Technical SEO Help" 
+       class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-lg transition mt-1">
+      Contact Me to Get Started
+    </a>
+  </div>
+
+</div>

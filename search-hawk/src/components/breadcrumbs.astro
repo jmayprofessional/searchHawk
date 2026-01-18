@@ -1,0 +1,28 @@
+---
+/*
+  Breadcrumbs.astro
+  Props:
+    - items: Array<{ title: string, href?: string }>
+      Example: [
+        { title: 'Home', href: '/' },
+        { title: 'Tools', href: '/tools' },
+        { title: 'Leadsnap' }
+      ]
+*/
+const { items } = Astro.props;
+---
+
+<nav aria-label="Breadcrumb" class="text-gray-400 text-sm mb-4">
+  <ol class="flex flex-wrap space-x-2">
+    {items.map((item, index) => (
+      <li class="flex items-center">
+        {item.href ? (
+          <a href={item.href} class="hover:text-purple-400 transition">{item.title}</a>
+        ) : (
+          <span class="text-gray-300">{item.title}</span>
+        )}
+        {index < items.length - 1 && <span class="mx-2">/</span>}
+      </li>
+    ))}
+  </ol>
+</nav>

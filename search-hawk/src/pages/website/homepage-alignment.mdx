@@ -1,44 +1,85 @@
 ---
 title: "Homepage Alignment"
+layout: "../../layouts/Layout.astro"
 ---
 
-import Layout from '../../layouts/Layout.astro'
+<div class="min-h-screen bg-gray-900 text-gray-100 p-8 flex flex-col items-center space-y-12">
 
-<Layout title={frontmatter.title}>
-
-<div class="max-w-3xl mx-auto space-y-8">
-
-  {/* Page header */}
-  <div class="text-center">
-    <h1 class="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-4">
-      {frontmatter.title}
+  {/* Header */}
+  <div class="text-center max-w-3xl">
+    <h1 class="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-4">
+      Homepage Alignment
     </h1>
-    <p class="text-gray-300 text-lg">
-      The homepage should clearly reflect your GBP primary service and location.
+    <p class="text-gray-300 text-lg mb-4">
+      Your homepage is often the first thing both users and Google see. Align it with your Google Business Profile (GBP) so it clearly communicates your primary service, location, and credibility.
+    </p>
+    <p class="text-gray-400">
+      Each section below explains why it matters, how to implement it, and examples to follow.
     </p>
   </div>
 
-  {/* Checklist card */}
-  <div class="bg-gray-800 rounded-xl shadow-lg p-6 space-y-4">
-    <h2 class="text-2xl font-bold mb-2">Checklist</h2>
-    <ul class="list-disc list-inside text-gray-200 space-y-2">
-      <li>H1 matches GBP primary category</li>
-      <li>City or service area included naturally in homepage content</li>
-      <li>Main services listed clearly and match GBP services</li>
-      <li>Avoid keyword stuffing — use natural language</li>
-      <li>Confirm homepage NAP matches GBP exactly</li>
-    </ul>
+  {/* Checklist Sections */}
+  <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">H1 Matches GBP Primary Category</h2>
+      <p class="text-gray-400 mb-2">
+        Your main heading (H1) tells Google and users what your page is about. Matching it to your GBP primary category reinforces local relevance.
+      </p>
+      <p class="text-gray-400">
+        <strong>Example:</strong> H1 → "Plumber in Charleston, SC"
+      </p>
+    </div>
+
+    <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">Include City or Service Area</h2>
+      <p class="text-gray-400 mb-2">
+        Mention your location naturally in headings, intro text, and services. This signals to Google where you operate.
+      </p>
+      <p class="text-gray-400">
+        <strong>Example:</strong> "We provide expert plumbing services in Charleston, SC and surrounding areas."
+      </p>
+    </div>
+
+    <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">List Main Services Clearly</h2>
+      <p class="text-gray-400 mb-2">
+        Display your main GBP services on the homepage so users can quickly find them and Google can match searches.
+      </p>
+      <p class="text-gray-400">
+        <strong>Example:</strong> "Emergency Plumbing", "Drain Cleaning", "Water Heater Repair"
+      </p>
+    </div>
+
+    <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+      <h2 class="text-2xl font-bold mb-2">Use Natural Language (No Keyword Stuffing)</h2>
+      <p class="text-gray-400 mb-2">
+        Write for humans first. Overusing keywords can hurt readability and rankings.
+      </p>
+      <p class="text-gray-400">
+        <strong>Example:</strong> Instead of "Plumber Charleston Plumbing Services Charleston Plumber", write "Our Charleston plumbing team is ready to fix leaks, clogs, and more."
+      </p>
+    </div>
+
+    <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 md:col-span-2">
+      <h2 class="text-2xl font-bold mb-2">Confirm Homepage NAP Matches GBP</h2>
+      <p class="text-gray-400 mb-2">
+        Consistent Name, Address, Phone (NAP) ensures Google trusts your business location.
+      </p>
+      <p class="text-gray-400">
+        <strong>Example:</strong> GBP lists "123 Main St, Charleston, SC" → homepage must use the exact same format.
+      </p>
+    </div>
+
   </div>
 
-  {/* Notes card */}
-  <div class="bg-gray-800 rounded-xl shadow-lg p-6">
-    <h2 class="text-2xl font-bold mb-2">Notes</h2>
+  {/* Optional Notes Card */}
+  <div class="max-w-3xl bg-gray-800 rounded-xl shadow-lg p-8 w-full">
+    <h2 class="text-2xl font-bold mb-4">Notes & Audit</h2>
     <textarea
       class="w-full min-h-[120px] bg-gray-900 text-gray-100 border border-gray-700 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-purple-500"
-      placeholder="Optional: record homepage H1/H2 and services for auditing"
+      placeholder="Optional: Record homepage H1/H2, services, NAP, or any updates made"
     ></textarea>
   </div>
 
 </div>
-
-</Layout>
