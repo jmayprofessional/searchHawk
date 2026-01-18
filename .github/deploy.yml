@@ -1,0 +1,39 @@
+name: Deploy Astro Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger deploy on pushes to main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Build Astro site
+      - name: Build Astro site
+        run: npm run build
+
+      # 5. Create .nojekyll to preserve Tailwind & other files
+      - name: Create .nojekyll
+        run: touch dist/.nojekyll
+
+      # 6. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
